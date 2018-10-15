@@ -7,11 +7,14 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void ConvertTest()
+        public void ConvertRomanToArabicTest()
         {
-            int expected = 0;
-            var actual = ConvertRomanToArabic.Convert("");
-            Assert.AreEqual(expected,actual);
+            int expected = 19;
+            ConvertRomanToArabic c = new ConvertRomanToArabic();
+            var actual = c.Convert("XIX");
+            Assert.AreEqual(expected, actual);
         }
+
+
     }
 }

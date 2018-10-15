@@ -10,7 +10,10 @@ namespace ArabicRomanConverter
         {
             Console.WriteLine("Please enter roman numerals");
             string s = Console.ReadLine().ToUpper();
-            ConvertRomanToArabic.Convert(s);
+            ConvertRomanToArabic a = new ConvertRomanToArabic();
+            a.Convert(s);
+            ConvertArabicToRoman b = new ConvertArabicToRoman();
+            var c = b.Convert(15);
             Console.ReadKey();
         }
     }
